@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Hello Friend" FontSize="20" TextColor="Black" />
+            <Button Text="Press me" />
+            <Label Text="Correct?" />
+            <CheckBox HorizontalOptions="Start" />
+            <RadioButton GroupName="State" Content="Option 1" />
+            <RadioButton GroupName="State" Content="Option 2" />
+            <Entry IsPassword="True" Placeholder="Enter password" />
+            <Entry Placeholder="Enter email" />
+            <Editor Placeholder="Enter text" AutoSize="TextChanges" />
+            <Slider Minimum="10" Maximum="50" />
+            <Switch IsToggled="True" />
+            <Label x:Name="messageLabel" Text="Picture Uploaded" TextColor="Red" />
+           <!-- <Image x:Name="imageControl" 
+                   WidthRequest="352.73"
+                   HeightRequest="300"
+                   Aspect="AspectFit"/>
+            <Image Source="https://th.bing.com/th/id/OIP.reoCd8QignWn-aYk8AhZ_gHaNK?rs=1&amp;pid=ImgDetMain"
+                   WidthRequest="352.73"
+                    HeightRequest="300"
+                    Aspect="AspectFit"/>
+            <Image Source="https://th.bing.com/th/id/OIP.CDeAgNnAG-yyCgEXPq9dhwHaHa?rs=1&amp;pid=ImgDetMain"
+                   WidthRequest="352.73"
+                    HeightRequest="300"
+                    Aspect="AspectFit"/>-->
+            <Image Source="Resources/Images/oip.jpg"
+                    WidthRequest="300"
+                     HeightRequest="300"
+                     Aspect="AspectFit"/>
+            <!-- WebView с сайтом -->
+            <WebView HeightRequest="300"
+                      WidthRequest="300"
+                 Source="https://www.bing.com/" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
