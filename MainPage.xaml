@@ -5,22 +5,28 @@
 
     <ScrollView>
         <StackLayout Padding="20" Spacing="10">
-            <Label Text="Hello Friend" FontSize="20" TextColor="Black" />
-            <Button Text="Press me" />
+            <Label Text="Registration" FontSize="20" TextColor="Black" />
+
+            <Entry x:Name="nameField"  Placeholder="Enter name" />
+            <Entry x:Name="emailField" Placeholder="Enter email" />
+            <Entry x:Name="passwordField" IsPassword="True" Placeholder="Enter password" />
+
             <Label Text="Correct?" />
-            <CheckBox HorizontalOptions="Start" />
-            <RadioButton GroupName="State" Content="Option 1" />
-            <RadioButton GroupName="State" Content="Option 2" />
-            <Entry IsPassword="True" Placeholder="Enter password" />
-            <Entry Placeholder="Enter email" />
+            <CheckBox x:Name="checkField" HorizontalOptions="Start" />
+
+            <Label Text="Are you sure?" />
+            <RadioButton GroupName="State" Content="YES!" />
+            <RadioButton GroupName="State" Content="No..." />
+
+            <Label Text="You can add a comment" />
             <Editor Placeholder="Enter text" AutoSize="TextChanges" />
+
+            <Button x:Name="buttonSend" Text="Send" Clicked="ButtonClick"/>
+            <Label x:Name="errorField" Text="" TextColor="Red" FontSize="12"></Label>
+            
             <Slider Minimum="10" Maximum="50" />
             <Switch IsToggled="True" />
-            <Label x:Name="messageLabel" Text="Picture Uploaded" TextColor="Red" />
-           <!-- <Image x:Name="imageControl" 
-                   WidthRequest="352.73"
-                   HeightRequest="300"
-                   Aspect="AspectFit"/>
+
             <Image Source="https://th.bing.com/th/id/OIP.reoCd8QignWn-aYk8AhZ_gHaNK?rs=1&amp;pid=ImgDetMain"
                    WidthRequest="352.73"
                     HeightRequest="300"
@@ -28,7 +34,7 @@
             <Image Source="https://th.bing.com/th/id/OIP.CDeAgNnAG-yyCgEXPq9dhwHaHa?rs=1&amp;pid=ImgDetMain"
                    WidthRequest="352.73"
                     HeightRequest="300"
-                    Aspect="AspectFit"/>-->
+                    Aspect="AspectFit"/><!-- Картинки из интернета не работают -->
             <Image Source="Resources/Images/oip.jpg"
                     WidthRequest="300"
                      HeightRequest="300"
