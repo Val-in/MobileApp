@@ -27,14 +27,22 @@
             <Slider Minimum="10" Maximum="50" />
             <Switch IsToggled="True" />
 
-            <Image Source="https://th.bing.com/th/id/OIP.reoCd8QignWn-aYk8AhZ_gHaNK?rs=1&amp;pid=ImgDetMain"
-                   WidthRequest="352.73"
-                    HeightRequest="300"
-                    Aspect="AspectFit"/>
-            <Image Source="https://th.bing.com/th/id/OIP.CDeAgNnAG-yyCgEXPq9dhwHaHa?rs=1&amp;pid=ImgDetMain"
-                   WidthRequest="352.73"
-                    HeightRequest="300"
-                    Aspect="AspectFit"/><!-- Картинки из интернета не работают -->
+            <Image WidthRequest="352.73" HeightRequest="300" Aspect="AspectFit">
+                <Image.Source>
+                    <UriImageSource Uri="https://fikiwiki.com/uploads/posts/2022-02/1644991750_8-fikiwiki-com-p-prikolnie-kartinki-pro-kotov-9.jpg"
+                                    CachingEnabled="True"
+                                    CacheValidity="1.00:00:00"/>
+                </Image.Source>
+            </Image>
+
+            <Image WidthRequest="352.73" HeightRequest="300" Aspect="AspectFit">
+                <Image.Source>
+                    <UriImageSource Uri="https://minutapozitiva.ru/wp-content/uploads/2018/03/Kotik-v-venochke.jpg"
+                                    CachingEnabled="True"
+                                    CacheValidity="1.00:00:00"/>
+                </Image.Source>
+            </Image>
+
             <Image Source="Resources/Images/oip.jpg"
                     WidthRequest="300"
                      HeightRequest="300"
